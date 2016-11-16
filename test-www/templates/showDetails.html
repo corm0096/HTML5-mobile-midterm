@@ -1,0 +1,14 @@
+<main>
+<p>DETAILS</p>
+	<div id="sliceright" ng-show="theBook!=empty">
+		<h2>{{theBook.title}}</h2>
+		<p id="price">Price: ${{theBook.price}}</p>
+		<p id="rating">RATING: {{stars}}</p>
+		<p>SHORT DESCRIPTION: {{theBook.short_description}}</p>
+		<p>LONG DESCRIPTION:</p>
+		<p>{{theBook.long_description}}</p>
+	</div>
+	<div id="sliceright" ng-show="theBook==empty">
+		<p>RETRIEVING BOOK...</p>
+	</div>
+</main>

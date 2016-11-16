@@ -1,0 +1,39 @@
+.left
+{
+	float:left;
+	width: 50%;
+}
+.right
+{
+	float:right;
+	width: 50%;
+}
+
+.catimg
+{
+	width:50%;
+	margin-left: 25%;
+}
+
+.cattitle
+{
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+#sliceleftbig
+{
+	float:left;
+	width:100%;
+}
+#sliceleftsmall
+{
+	float:left;
+	width:50%;
+}
+
+#sliceright
+{
+	float:right;
+	width: 50%;
+}

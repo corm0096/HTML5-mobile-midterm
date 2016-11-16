@@ -1,0 +1,19 @@
+<main>
+	<div class="left">
+	<span ng-repeat="category in categoryList" ng-if="$even">
+			<img class="catimg" ng-src={{category.image}}>
+			<a ui-sref="books({bookcat:category._id})" ui-sref-active="active">
+				<h3 class="cattitle">{{category.title}}</h3>
+			</a>
+	</span>
+	</div>
+	
+<div class="right">
+	<span ng-repeat="category in categoryList" ng-if="$odd">
+			<img class="catimg" ng-src={{category.image}}>
+			<a ui-sref="books({bookcat:category._id})" ui-sref-active="active">
+				<h3 class="cattitle">{{category.title}}</h3>
+			</a>
+	</span>
+</div>
+</main>

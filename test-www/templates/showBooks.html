@@ -1,0 +1,23 @@
+<main>
+	<a href="#/categories"><h2>&lt;-- BACK</h2></a>
+<div id="sliceleftbig">
+	<div class="left">
+		<span ng-repeat="book in bookList" ng-if="$even">
+				<img class="catimg" ng-src={{book.image}}>
+				<a ui-sref="books.product({prodnum:book._id})" ui-sref-active="active">
+					<h3 class="cattitle">{{book.title}}</h3>
+				</a>
+		</span>
+	</div>
+	<div class="right">
+		<span ng-repeat="book in bookList" ng-if="$odd">
+				<img class="catimg" ng-src={{book.image}}>
+				<a ui-sref="books.product({prodnum:book._id})" ui-sref-active="active">
+					<h3 class="cattitle">{{book.title}}</h3>
+				</a>
+		</span>
+	</div>
+</div>
+	<ui-view></ui-view>
+</main>
+	

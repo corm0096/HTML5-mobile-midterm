@@ -1,0 +1,27 @@
+
+<!--
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+-->
+<main>
+<div id="sliceright">
+	<p>DETAILS</p>
+		<h2>{{theBook.title}}</h2>
+		<p id="price">Price: ${{theBook.price}}</p>
+		<p id="rating">RATING: {{stars}}</p>
+		<p id="userrating">YOUR RATING:
+			<span ng-repeat="i in [1,2,3,4,5]">
+				<span ng-show="i<=yourReview.value" ng-click="pickStar(i)">&#9733;</span>
+				<span ng-show="i>yourReview.value" ng-click="pickStar(i)">&#9734;</span>
+			</span>	
+		</div>
+		</p>
+		
+		
+		<p> </p>
+		
+		<p>SHORT DESCRIPTION: {{theBook.short_description}}</p>
+		<p>LONG DESCRIPTION:</p>
+		<p>{{theBook.long_description}}</p>
+	</div>
+</main>
